@@ -1,12 +1,7 @@
-{
-  "sudo": "required",
-  "dist": "trusty",
-  "language": "node_js",
-  "node_js": "6",
-  "before_install": [
-    "sudo apt-get install mongodb -y",
-    "npm -g install npm@latest"
-  ],
-  "group": "stable",
-  "os": "linux"
-}
+dist: trusty
+language: ruby
+before_install:
+  - npm install -g dredd@stable
+
+after_success:
+    - dredd
