@@ -36,7 +36,7 @@ blueprint: 'D:\Raoul\Downloads\apiary.apib'
 endpoint: 'https://testapi.prioticket.com/s1'
 
 before_install:
-  - npm install -g dredd@stable
+  - npm install -g dredd
 
 after_success:
     - dredd
