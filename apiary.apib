@@ -40,7 +40,7 @@ Header: Initiator should send a “token” in the header of the message. The to
 
 The token = Alphanumeric, 17 characters and would be in format (XXX-XXXX-XXXX-XXX). We will sent the token of the TEST and the LIVE environment in a separate emails.
 
-+ Request (application/json)
++ Request (content-type: text/html)
 
     + Headers
     
@@ -60,35 +60,142 @@ The token = Alphanumeric, 17 characters and would be in format (XXX-XXXX-XXXX-XX
 
     + Body
 
-                { "response_code": 1, "message": "success", "transaction_id": 310065,
-"pass_code": "0t-yfh", "currency": "EUR", "distributor_ref": "150", "venue_id":
-35, "venue_name": "Van Gogh Museum", "entrance_date_time": "2016-12-08T11:32:33",
-"total_amount": 65, "transaction_ref": "", "transaction_type": "Direct",
-"ticket_info": [ { "location_id": "", "ticket_id": "96", "ticket_name":
-"Van Gogh Museum Entry with Voucher Lane Access", "ticket_plu": 101, "ticket_ref":
-"", "reservation": 0, "reservation_id": 0, "reservation_ref": "", "valid_from":
-"", "valid_till": "", "number_of_users": 6, "user_info": [ { "ticket_type_id":
-1, "ticket_type_tag": "Adult", "ticket_type_ref": "", "user_age_group":
-"18-99", "price_per_ticket": 15, "tax_percentage": 6, "tax_per_ticket":
-0.85, "ticket_type_option": [ { "tto_id": 0, "tto_ref": "", "tto_price":
-0, "tto_tax_percentage": 0, "tto_tax_amount": 0 } ] }, { "ticket_type_id":
-1, "ticket_type_tag": "Adult", "ticket_type_ref": "", "user_age_group":
-"18-99", "price_per_ticket": 15, "tax_percentage": 6, "tax_per_ticket":
-0.85, "ticket_type_option": [ { "tto_id": 0, "tto_ref": "", "tto_price":
-0, "tto_tax_percentage": 0, "tto_tax_amount": 0 } ] }, { "ticket_type_id":
-1, "ticket_type_tag": "Adult", "ticket_type_ref": "", "user_age_group":
-"18-99", "price_per_ticket": 15, "tax_percentage": 6, "tax_per_ticket":
-0.85, "ticket_type_option": [ { "tto_id": 0, "tto_ref": "", "tto_price":
-0, "tto_tax_percentage": 0, "tto_tax_amount": 0 } ] }, { "ticket_type_id":
-3, "ticket_type_tag": "Child", "ticket_type_ref": "", "user_age_group":
-"1-3", "price_per_ticket": 0, "tax_percentage": 6, "tax_per_ticket": 0,
-"ticket_type_option": [ { "tto_id": 0, "tto_ref": "", "tto_price": 0, "tto_tax_percentage":
-0, "tto_tax_amount": 0 } ] }, { "ticket_type_id": 3, "ticket_type_tag":
-"Child", "ticket_type_ref": "", "user_age_group": "4-17", "price_per_ticket":
-10, "tax_percentage": 6, "tax_per_ticket": 0.57, "ticket_type_option":
-[ { "tto_id": 0, "tto_ref": "", "tto_price": 0, "tto_tax_percentage": 0,
-"tto_tax_amount": 0 } ] }, { "ticket_type_id": 3, "ticket_type_tag": "Child",
-"ticket_type_ref": "", "user_age_group": "4-17", "price_per_ticket": 10,
-"tax_percentage": 6, "tax_per_ticket": 0.57, "ticket_type_option": [ {
-"tto_id": 0, "tto_ref": "", "tto_price": 0, "tto_tax_percentage": 0, "tto_tax_amount":
-0 } ] } ] } ] }
+                {
+                  "response_code": 1,
+                  "message": "success",
+                  "transaction_id": 310065,
+                  "pass_code": "0t-yfh",
+                  "currency": "EUR",
+                  "distributor_ref": "150",
+                  "venue_id": 35,
+                  "venue_name": "Van Gogh Museum",
+                  "entrance_date_time": "2016-12-07T12:04:27",
+                  "total_amount": 65,
+                  "transaction_ref": "",
+                  "transaction_type": "Direct",
+                  "ticket_info": [
+                    {
+                      "location_id": "",
+                      "ticket_id": "96",
+                      "ticket_name": "Van Gogh Museum Entry with Voucher Lane Access",
+                      "ticket_plu": 101,
+                      "ticket_ref": "",
+                      "reservation": 0,
+                      "reservation_id": 0,
+                      "reservation_ref": "",
+                      "valid_from": "",
+                      "valid_till": "",
+                      "number_of_users": 6,
+                      "user_info": [
+                        {
+                          "ticket_type_id": 1,
+                          "ticket_type_tag": "Adult",
+                          "ticket_type_ref": "",
+                          "user_age_group": "18-99",
+                          "price_per_ticket": 15,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0.85,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        },
+                        {
+                          "ticket_type_id": 1,
+                          "ticket_type_tag": "Adult",
+                          "ticket_type_ref": "",
+                          "user_age_group": "18-99",
+                          "price_per_ticket": 15,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0.85,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        },
+                        {
+                          "ticket_type_id": 1,
+                          "ticket_type_tag": "Adult",
+                          "ticket_type_ref": "",
+                          "user_age_group": "18-99",
+                          "price_per_ticket": 15,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0.85,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        },
+                        {
+                          "ticket_type_id": 3,
+                          "ticket_type_tag": "Child",
+                          "ticket_type_ref": "",
+                          "user_age_group": "1-3",
+                          "price_per_ticket": 0,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        },
+                        {
+                          "ticket_type_id": 3,
+                          "ticket_type_tag": "Child",
+                          "ticket_type_ref": "",
+                          "user_age_group": "4-17",
+                          "price_per_ticket": 10,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0.57,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        },
+                        {
+                          "ticket_type_id": 3,
+                          "ticket_type_tag": "Child",
+                          "ticket_type_ref": "",
+                          "user_age_group": "4-17",
+                          "price_per_ticket": 10,
+                          "tax_percentage": 6,
+                          "tax_per_ticket": 0.57,
+                          "ticket_type_option": [
+                            {
+                              "tto_id": 0,
+                              "tto_ref": "",
+                              "tto_price": 0,
+                              "tto_tax_percentage": 0,
+                              "tto_tax_amount": 0
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
