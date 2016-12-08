@@ -7,5 +7,5 @@ language: node_js
 
 before_install:
   - npm install -g dredd@stable
-before_script:
+script:
   - dredd 
