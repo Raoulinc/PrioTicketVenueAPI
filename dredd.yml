@@ -33,4 +33,4 @@ hooks-worker-handler-host: localhost
 hooks-worker-handler-port: 61321
 config: ./dredd.yml
 blueprint: apiary.apib
-endpoint: 'https://testapi.prioticket.com/s1'
+endpoint: 'http://testapi.prioticket.com/s1'
