@@ -1,8 +1,4 @@
-  language: node_js
-  node_js:
-  - 0.8
-  - 0.10
-  before_install:
-  - npm install -g dredd
-
-dredd apiary.apib http://localhost:3000/
+before_install:
+  - npm install -g dredd@stable
+before_script:
+  - dredd apiary.apib http://localhost:3000
