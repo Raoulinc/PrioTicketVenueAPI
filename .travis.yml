@@ -3,5 +3,5 @@ notifications:
 
 before_install:
   - npm install -g dredd@stable
-after_success:
+before_script:
   - dredd 
