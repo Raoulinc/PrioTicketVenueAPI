@@ -1,4 +1,4 @@
 before_install:
   - npm install -g dredd@stable
 before_script:
-  - dredd apiary.apib https://testapi.prioticket.com/s1
+  - dredd apiary.apib http://testapi.prioticket.com/s1
