@@ -1,4 +1,5 @@
 before_install:
   - npm install -g dredd@stable
+  - npm config set strict-ssl false
 before_script:
   - dredd apiary.apib https://testapi.prioticket.com/V1.1
