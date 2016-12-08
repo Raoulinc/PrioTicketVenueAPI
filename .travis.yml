@@ -1,3 +1,6 @@
+notifications:
+  email: false
+
 before_install:
   - npm install -g dredd@stable
 before_script:
