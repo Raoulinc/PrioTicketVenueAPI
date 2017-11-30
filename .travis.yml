@@ -6,6 +6,6 @@ dist: trusty
 language: node_js
 
 before_install:
-  - npm install -g dredd@stable
+  - npm install -g dredd@2.2.5
 script:
   - dredd 
